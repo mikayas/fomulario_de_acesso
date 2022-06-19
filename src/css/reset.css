@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: clamp(5px, 10px + 25%, 15px);
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <link rel="stylesheet" href="src/css/reset.css"/>
+        <link rel="stylesheet" href="src/css/style.css"/>
+        <link rel="stylesheet" href="src/css/script.css">
+        <link rel="shortcut icon" href="src/icon/favicon.ico"/>
+        <title>perfil | entrar</title>
+    </head>
+    <body>
+        <section id="screenFormLogin" class="screenForm">
+            <div class="containerPress">
+                <h1 class="titlePress">PERFIL</h1>
+                <p class="paragPress">
+                    <span>Ainda não possui uma conta?</span>
+                    <span id="checkForCreate" class="linkPress">Clique Aqui!</span>
+                </p>
+            </div>
+            <div id="containerFormLogin" class="containerForm">
+                <label class="labelForm">entrar com uma conta</label>
+                <form class="contentForm">
+                    <div class="cellForm">
+                        <input id="inputLoginName" type="text" required>
+                        <label for="inputLoginName">nome ou email</label>
+                    </div>
+                    <div class="cellForm">
+                        <input id="inputLoginPassword" type="password" required>
+                        <label for="inputLoginPassword">senha</label>
+                    </div>
+                </form>
+                <button class="btnForm">acessar</button>
+            </div>
+        </section>
+        <section id="screenFormCreate" class="screenForm">
+            <div id="containerFormCreate" class="containerForm">
+                <label class="labelForm">criar uma conta</label>
+                <form class="contentForm">
+                    <div class="cellForm">
+                        <input id="inputCreateName" type="text" required>
+                        <label for="inputCreateName">nome</label>
+                    </div>
+                    <div class="cellForm">
+                        <input id="inputCreateEmail" type="email" required>
+                        <label for="inputCreateEmail">email</label>
+                    </div>
+                    <div class="cellForm">
+                        <input id="inputCreatePassword" type="password" required>
+                        <label for="inputCreatePassword">escolha uma senha</label>
+                    </div>
+                    <div class="cellForm">
+                        <input id="inputCreatePasscon" type="password" required>
+                        <label for="inputCreatePasscon">confirme sua senha</label>
+                    </div>
+                </form>
+                <button class="btnForm">cadastrar</button>
+            </div>
+            <div class="containerPress">
+                <h1 class="titlePress">PERFIL</h1>
+                <p class="paragPress">
+                    <span>Já possui uma conta?</span>
+                    <span id="checkForLogin" class="linkPress">Clique Aqui!</span>
+                </p>
+            </div>
+        </section>
+        <script src="src/js/script.js"></script>
+    </body>
+</html>

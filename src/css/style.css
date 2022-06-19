@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+:root {
+    --color1: #ffffff;
+    --color2: #000000;
+    --colorB1: #00544F;
+    --colorB2: #00B25D;
+    --colorL1: #00ffff;
+    --colorL2: #f00000;
+}
+
+body {
+    background-color: var(--colorB2);
+    min-height: 100vh;
+}
+
+.containerPress {
+    color: var(--color1);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.titlePress {
+    font-size: 3rem;
+}
+
+.paragPress span {
+    font-size: 1.2rem;
+}
+
+.linkPress {
+    color: var(--colorL1);
+}
+
+.screenForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#screenFormLogin {
+    background: linear-gradient(45deg, var(--colorB1), var(--colorB2)) no-repeat;
+}
+
+#screenFormCreate {
+    background: linear-gradient(45deg, var(--colorB2), var(--colorB1)) no-repeat;
+    display: none;
+}
+
+.containerForm {
+    align-items: center;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 520px;
+    min-height: 70vh;
+    padding: 20px;
+    width: 100%;
+}
+
+#containerFormLogin {
+    border-radius: 20px 20px 0px 0px;
+}
+
+#containerFormCreate {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.labelForm {
+    color: var(--colorB1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contentForm {
+    width: 100%;
+}
+
+.cellForm {
+    margin: 50px auto;
+    max-width: 350px;
+    position: relative;
+    width: 100%;
+}
+
+.cellForm input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--colorB1);
+    outline: none;
+    width: 100%;
+}
+
+.cellForm label {
+    color: var(--colorB1);
+    font-size: 1.2rem;
+    left: 0px;
+    position: absolute;
+    transition-duration: 0.2s;
+    transform: translateY(-5px);
+}
+
+.btnForm {
+    background: linear-gradient(0deg, var(--colorB1), var(--colorB2));
+    border: none;
+    border-radius: 5px;
+    color: var(--color1);
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 100px;
+    padding: 5px;
+    transition-duration: 0.2s;
+    width: 100%;
+}

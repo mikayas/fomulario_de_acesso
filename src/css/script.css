@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.linkPress:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cellForm input:focus {
+    border-bottom: 1px solid var(--colorB2);
+}
+
+.cellForm input:invalid {
+    color: var(--colorL2);
+}
+
+.cellForm input:valid {
+    color: var(--colorB2);
+}
+
+.cellForm input:invalid ~ label {
+    transform: translateY(-20px);
+}
+
+.cellForm input:focus ~ label, .cellForm input:valid ~ label {
+    color: var(--colorB2);
+    transform: translateY(-20px) scale(0.7);
+}
+
+.btnForm:hover {
+    box-shadow: 2px 2px 10px var(--color2);
+}
+
+
+@keyframes opcTransition {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-width: 250px) {
+    * {
+        word-break: break-all;
+    }
+}
+
+@media (min-width: 650px) {
+    .screenForm {
+        flex-direction: row;
+    }
+    #screenFormLogin {
+        background: linear-gradient(0deg, var(--colorB1), var(--colorB2)) no-repeat;
+    }
+    #screenFormCreate {
+        background: linear-gradient(0deg, var(--colorB2), var(--colorB1)) no-repeat;
+    }
+    .containerForm {
+        min-height: 90vh;
+        min-width: 400px;
+    }
+    #containerFormLogin {
+        border-radius: 20px 0px 0px 20px;
+    }
+    #containerFormCreate {
+        border-radius: 0px 20px 20px 0px;
+    }
+}
